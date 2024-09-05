@@ -1,0 +1,26 @@
+.homePage-container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  
+}
+.fliter-component{
+    /* background-color: green; */
+    flex: 0 0 auto;
+    width: 18%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 20px;
+    /* background-color: #00ffff; */
+    z-index: 1000;
+
+}
+.listview-component{
+    flex: 1;
+    margin-left: 220px; 
+    display: flex;
+    justify-content: center;
+}
