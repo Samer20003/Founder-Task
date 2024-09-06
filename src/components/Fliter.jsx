@@ -9,6 +9,7 @@ function Fliter({user}) {
     
    const {checked, handlePictureCheck, listClick, handleClick} = useHome();
    const [isModalOpen, setModalIsOpen] = useState(false);
+  
    
   const renderModal = () =>{
     setModalIsOpen(!isModalOpen)
@@ -28,7 +29,9 @@ function Fliter({user}) {
 
 
         </h1> 
-    <AutoComplete />
+    <AutoComplete
+      value = {listClick}
+    />
     <Slider />
     </div>
    

@@ -10,7 +10,7 @@ import userListContext from './usersListContext';
 import {useHome} from "./mainContext"
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
-export default function CheckboxesTags() {
+export default function CheckboxesTags(props) {
   const {userData} = useContext(userListContext) 
   const {handleAutoTagsValues} = useHome();
   function getUniqueTags(userData) {
@@ -34,6 +34,7 @@ export default function CheckboxesTags() {
   return (
     <Autocomplete
       multiple
+      value={props.value}
       id="checkboxes-tags-demo"
       options={getUniqueTags(userData)}
       disableCloseOnSelect

@@ -2,7 +2,7 @@ import React , {useContext} from 'react'
 import Dropdown from 'react-bootstrap/Dropdown'
 import {useHome} from "./mainContext"
 function ListFliterGroup() {
-    const {saveBtnValues, isChecked, setListClick, setSliderValue, } = useHome();
+    const {saveBtnValues, isChecked, setListClick, setSliderValue} = useHome();
     
     
     const handleFlitertValues = (value) =>{
