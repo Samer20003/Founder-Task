@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import Context from './Context'
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import { useState } from 'react';
-
+import {useHome} from "./mainContext"
 export default function SliderSizes() {
-  const {sliderValue,sliderTrack} = useContext(Context);
+  const {sliderValue,sliderTrack} = useHome();
   return (
-    <Box sx={{ width: 300 }}>
- 
+    <Box sx={{ width: 300  }}>
+      <label className='mt-4' > Number of friends</label>
       <Slider 
       value={sliderValue}
       onChange={sliderTrack}

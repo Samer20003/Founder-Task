@@ -16,7 +16,7 @@ function App() {
     userData
   }
   return (
-    <div className='container'>
+    <div>
 
   <BrowserRouter>
     <usersListContext.Provider value ={usersData} >

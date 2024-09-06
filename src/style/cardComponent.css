@@ -1,24 +1,7 @@
-.card-title {
-    font-size: 30px;
-}
-.card-text {
-    font-size: 15px;
-}
-.card-email {
-    font-size: 16px;
-}
-.card-phone {
-    font-size: 16px;
-}
-.card-friend {
-    font-size: 16px;
-}
-
 .card:hover{
     background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    z-index: 9999;
-    
+    z-index: 9999;   
 }

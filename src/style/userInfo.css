@@ -1,103 +1,22 @@
-.profile-card-container {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    
-}
-
-
 .profile-card {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(3,137,206,1) 79%, rgba(0,212,255,1) 100%);  
-    width: 500px; 
-    padding: 50px 20px; 
-    border-radius: 15px;
+    padding: 50px 20px ; 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    text-align: center;
-    position: relative; 
     padding-top: 150px;
-    margin-top: 90px;
+    margin-top: 300px;
 }
-
-
 .profile-pic {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(3,137,206,1) 79%, rgba(0,212,255,1) 100%);
-    width: 250px; 
-    height: 250px; 
-    border-radius: 50%;
-    object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    position: absolute;
-    top: -125px; 
+    top: -170px; 
     left: 50%;
     transform: translateX(-50%);
     border: 4px solid rgb(2,0,36);
 }
-
-h2 {
-    font-size: 28px; 
-    color: white;
-    margin: 10px 0;
-}
-
-.job-title {
-    font-size: 16px; 
-    color: white;
-    margin-bottom: 25px;
-}
-
-.profile-actions {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px 0;
-}
-
-.profile-actions .btn {
-    background-color: #f0f4ff;
-    color: #007bff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.profile-actions .btn:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.profile-stats {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px 0;
-    color: white;
-}
-
-.profile-stats div {
-    text-align: center;
-}
-
-.profile-stats strong {
-    font-size: 18px;
-    color: white;
-}
-
 .show-more {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 30px; 
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
 }
 
-.show-more:hover {
-    opacity: 0.9;
-}
+

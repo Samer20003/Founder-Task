@@ -1,16 +1,12 @@
 import React , {useContext, useState} from 'react'
-import Context from "./Context"
 import UserCard from './UserCard'
 import Dropdown from 'react-bootstrap/Dropdown'
-import UserInfo from '../pages/UserInfo'
-import Fliter from './Fliter'
 import userListContext from './usersListContext'
+import {useHome} from "./mainContext"
 function ListView() {
     const {userData} = useContext(userListContext);
     const [users, setUser] = useState(userData);
-    const {checked} = useContext(Context)
-    const {listClick} = useContext(Context)
-    const {sliderValue} = useContext(Context);
+    const {checked, listClick, sliderValue} = useHome();
 // Handlers for the dropdown mnue 
     const handleSortAlphabetical = () =>{
     const sortedUsers = [...users].sort((a,b)=> a.name.localeCompare(b.name));
@@ -50,26 +46,27 @@ const filteredUsers = users.filter((user) => {
     const userValues = users
    
     return (
-      <div className='container' style={{width:"100vh"}}>
+      <div >
           <Dropdown className="mb-4">
               <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                   Sort by
               </Dropdown.Toggle>
 
-              <Dropdown.Menu>
+              <Dropdown.Menu> 
                   <Dropdown.Item onClick={handleSortAlphabetical} href="#/action-1">Alphabetical</Dropdown.Item>
                   <Dropdown.Item onClick={handleSortFriendNumber} href="#/action-2">Number of Friends</Dropdown.Item>
               </Dropdown.Menu>
           </Dropdown>
-          
-          <div className='row row-cols-auto'>
+         
+          <div className='row '>
               {filteredUsers.map((user) => (
-                  <div className='col' key={user.id}>
+                  <div className='col-6 col-md-3' key={user.id}>
                       <UserCard user={user} />
                   </div>
               ))}
           </div>
       </div>
+     
   );
 }
 

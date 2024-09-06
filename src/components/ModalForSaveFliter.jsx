@@ -1,11 +1,14 @@
 import { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Context from "./Context"
+import {useHome} from "./mainContext"
 function ModalForSaveFliter({onClose}) {
-   const {checked, listClick, sliderValue, fliterName, handleInputChange, saveBtnValues, saveStatesForAllFliters} = useContext(Context);
+   const {checked, listClick, sliderValue, fliterName, handleFliterNameChange, saveBtnValues, saveStatesForAllFliters} = useHome();
     
-
+   const handleSave = () => {
+    saveStatesForAllFliters();  
+    onClose();                   
+  };
   return (
     <div
       className="modal show"
@@ -21,13 +24,13 @@ function ModalForSaveFliter({onClose}) {
           type="text" 
           name='fliterName'
           value={fliterName}
-          onChange={handleInputChange}
+          onChange={handleFliterNameChange}
            />
         </Modal.Body>
 
         <Modal.Footer>
           <Button variant="secondary" onClick={onClose}>Close</Button>
-          <Button variant="primary" onClick={saveStatesForAllFliters}>Save fliter</Button>
+          <Button variant="primary" onClick={handleSave}>Save fliter</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </div>

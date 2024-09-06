@@ -7,12 +7,12 @@ import Autocomplete from '@mui/material/Autocomplete';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import userListContext from './usersListContext';
-import Context from './Context'
+import {useHome} from "./mainContext"
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
 export default function CheckboxesTags() {
   const {userData} = useContext(userListContext) 
-  const {handleClick} = useContext(Context)
+  const {handleAutoTagsValues} = useHome();
   function getUniqueTags(userData) {
   
     
@@ -38,7 +38,7 @@ export default function CheckboxesTags() {
       options={getUniqueTags(userData)}
       disableCloseOnSelect
       getOptionLabel={(option) => option} // Adjusted to match the JSON structure
-      onChange={handleClick}
+      onChange={handleAutoTagsValues}
       renderOption={(props, option, { selected }) => (
         <li {...props} key={option}>
           <Checkbox
