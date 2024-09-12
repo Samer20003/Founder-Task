@@ -1,0 +1,110 @@
+[
+  {
+    "hasPic":"https://cdn-icons-png.flaticon.com/512/4086/4086679.png",
+    "name": "David",
+    "numberOfFriends": 70,
+    "email": "david@example.com",
+    "tags": ["C#", ".NET", "React"],
+    "id": 2,
+    "city": "San Francisco",
+    "position" : "Fron-end devloper",
+    "fullName" : "David lowes maclarine",
+    "numberOfProjects": 40
+
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/256/2219/2219822.png",
+    "name": "Ali",
+    "numberOfFriends": 10,
+    "email": "Ali23@example.com",
+    "tags": ["GitHub"],
+    "id": 3,
+    "city": "London",
+    "position" : "Back-end devloper",
+    "fullName" : "Ali Shalbi maclarine",
+    "numberOfProjects": 20
+
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/512/2810/2810626.png",
+    "name": "Khaled",
+    "numberOfFriends": 67,
+    "email": "Khaled@example.com",
+    "tags": ["Python", "Django"],
+    "id": 4,
+    "city": "Berlin",
+    "position" : "Back-end devloper",
+    "fullName" : "Khaled lowes maclarine",
+    "numberOfProjects": 30
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/512/2810/2810597.png",
+    "name": "James",
+    "numberOfFriends": 1,
+    "email": "james@example.com",
+    "tags": ["Node.js", "Express"],
+    "id": 5,
+    "city": "Paris",
+    "position" : "Back-end devloper",
+    "fullName" : "James lowes maclarine",
+    "numberOfProjects": 100
+
+
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/512/8071/8071410.png",
+    "name": "Ahmad",
+    "numberOfFriends": 12,
+    "email": "Ahmad@example.com",
+    "tags": ["Vue.js", "JavaScript"],
+    "id": 6,
+    "city": "Tokyo",
+    "position" : "Fron-end devloper",
+    "fullName" : "Ahmad lowes maclarine",
+    "numberOfProjects": 5
+
+
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/512/8071/8071413.png",
+    "name": "Liam",
+    "numberOfFriends": 165,
+    "email": "liam@example.com",
+    "tags": ["HTML", "TypeScript"],
+    "id": 7,
+    "city": "New York",
+    "position" : "Fron-end devloper",
+    "fullName" : "Liam lowes maclarine",
+    "numberOfProjects": 100
+   
+
+
+  },
+  {
+    "hasPic": "https://cdn-icons-png.flaticon.com/256/8071/8071404.png",
+    "name": "Ava",
+    "numberOfFriends": 32,
+    "email": "ava@example.com",
+    "tags": ["HTML", "CSS"],
+    "id": 8,
+    "city": "Los Angeles",
+    "position" : "Front-end devloper",
+    "fullName" : "Ava lowes maclarine",
+    "numberOfProjects": 200
+    
+
+  },
+  {
+    "hasPic": "",
+    "name": "Noah",
+    "numberOfFriends": 188,
+    "email": "noah@example.com",
+    "tags": ["Java", "Spring"],
+    "id": 9,
+    "city": "Dubai",
+    "position" : "Back-end devloper",
+    "fullName" : "Noah lowes maclarine",
+    "numberOfProjects": 150
+
+  }
+]
